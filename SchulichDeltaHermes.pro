@@ -29,7 +29,7 @@
 
 TEMPLATE = subdirs  
 CONFIG += ordered static
-
+CONFIG += c++11
 message(University of Calgary Solar Car Team Delta Hermes)
 
 SUBDIRS = \

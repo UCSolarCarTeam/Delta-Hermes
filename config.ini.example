@@ -2,6 +2,9 @@
 
 forwardPeriod=500
 
+[JsonFormat]
+packetTitle=Gen5
+
 [SerialPort]
 portName=/dev/pts/7
 baudrate=9600
