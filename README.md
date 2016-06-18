@@ -5,6 +5,15 @@ It rebroadcasts a data feed from the Central Communication System and also logs 
 
 The name is inspired by the Olympian god Hermes who is portrayed as a messenger and scribe of the gods.
 
+The officially supported Qt version is 5.5.1. You will also need a rabbitmq server, you can install it using 
+    `sudo apt-get install rabbitmq-server`
+
+To install the required libraries you can run the `install-rabbit.sh` script. To link the libraries in runtime, you must add `/usr/local/lib/x86_64-linux-gnu/` to your `LD_LIBRARY_PATH`. That path my change depending on your arm architecture. 
+
+This can be done by appending the following line to your `.bashrc`
+    `export LD_LIBRARY_PATH=/usr/local/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH`
+ 
+
 ## Testing
 
 Testing the Schulich Delta Desktop Hermes is done with googletest and googlemock, the gmock and gtest header files need to be in your include path /usr/local/include or /usr/include.
