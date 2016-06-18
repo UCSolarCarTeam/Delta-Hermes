@@ -29,7 +29,7 @@
 
 TEMPLATE = app
 
-LIBS += -L../../build/.lib -lBusinessLayer -lCommunicationLayer -lDataLayer -lInfrastructureLayer
+LIBS += -L../../build/.lib -lBusinessLayer -lCommunicationLayer -lDataLayer -lInfrastructureLayer -lamqpcpp -lrabbitmq
 
 ! include( ../common.pri ) {
     error( "Couldn't find the common.pri file!" )
